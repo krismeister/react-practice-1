@@ -1,4 +1,3 @@
-
 import { MouseEvent, ReactElement } from "react";
 import logo from "./logo.svg";
 const Hello = ({
@@ -8,23 +7,24 @@ const Hello = ({
   name: string;
   children?: ReactElement | ReactElement[];
 }): ReactElement => {
-
-  const onClickHandler = (event: MouseEvent<HTMLAnchorElement>
-  ) => {
-    event.preventDefault()
-    return false
-  }
+  const onClickHandler = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    return false;
+  };
 
   return (
     <>
-      <a onClick={onClickHandler} href="google.com">I am {name}</a>
+      <a onClick={onClickHandler} href="google.com">
+        I am {name}
+      </a>
       {children}
     </>
   );
 };
 
-const Home = () =>{
-    return <header className="App-header">
+const Home = () => {
+  return (
+    <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit <code>src/App.tsx</code> and save to reload.
@@ -42,6 +42,7 @@ const Home = () =>{
         Learn React
       </a>
     </header>
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,6 +1,9 @@
+const Example = ({ name }: { name: string }) => {
+  return <h1>Simple Component: {name}</h1>;
+};
 
 const SimpleComponent = () => {
-    return <h1>I am a simple component</h1>
-}
+  return <Example name="Example Component" />;
+};
 
-export default SimpleComponent
+export default SimpleComponent;
