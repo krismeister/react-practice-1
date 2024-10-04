@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import SimpleComponent from "../pages/SimpleComponent/SimpleComponent";
-import SimpleState from "../pages/SimpleState/SimpleState";
-import ReducerStateComponent from "../pages/ReducerState/ReducerState";
+import Home from "../pages/01-Home/Home";
+import SimpleComponent from "../pages/02-SimpleComponent/SimpleComponent";
+import SimpleState from "../pages/03-SimpleState/SimpleState";
+import ReducerStateComponent from "../pages/04-ReducerState/ReducerState";
 
 const AppRouter = () => {
   return (
