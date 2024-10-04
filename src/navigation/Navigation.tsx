@@ -5,10 +5,10 @@ const Navigation = () => {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/component-1">Simple Component</Link>
-      <Link to="/state-1">Simple State</Link>
-      <Link to="/state-2">Reducer State</Link>
-      <Link to="/life-cycle-1">Component Life Cycle</Link>
+      <Link to="/02-simple-component">Simple Component</Link>
+      <Link to="/03-simple-state">Simple State</Link>
+      <Link to="/04-reducer-state">Reducer State</Link>
+      <Link to="/05-component-life-cycle">Component Life Cycle</Link>
     </nav>
   );
 };

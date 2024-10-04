@@ -9,10 +9,10 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/component-1" element={<SimpleComponent />} />
-      <Route path="/state-1" element={<SimpleState />} />
-      <Route path="/state-2" element={<ReducerStateComponent />} />
-      <Route path="/life-cycle-1" element={<ComponentLifeCycle />} />
+      <Route path="/02-simple-component" element={<SimpleComponent />} />
+      <Route path="/03-simple-state" element={<SimpleState />} />
+      <Route path="/04-reducer-state" element={<ReducerStateComponent />} />
+      <Route path="/05-component-life-cycle" element={<ComponentLifeCycle />} />
     </Routes>
   );
 };
