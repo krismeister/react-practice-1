@@ -1,0 +1,10 @@
+
+nav {
+    display: flex;
+    background: orange;
+}
+
+a {
+    display: block;
+    padding: 5px 10px;
+}
