@@ -7,6 +7,7 @@ import ComponentLifeCycle from "../pages/05-ComponentLifecycle/ComponentLifeCycl
 import RefsExample from "../pages/06-RefsExample/RefExample";
 import Imperative from "../pages/07-Imperative/Imperative";
 import { FunctionComponent } from "react";
+import ContextExample from "../pages/08-Context/ContextExample";
 
 type AppPageConfig = {
   path: string;
@@ -49,6 +50,11 @@ const appRoutes: AppPageConfig[] = [
     path: "/07-imperative",
     name: "Imperative",
     PageComponent: Imperative,
+  },
+  {
+    path: "/08-imperative",
+    name: "Context",
+    PageComponent: ContextExample,
   },
 ];
 
