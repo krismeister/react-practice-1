@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useReducer, useState } from "react";
+import { FunctionComponent, useReducer, useState } from "react";
 import CountReducerExampleComponent from "./CountExampleComponent";
 
 interface State {
