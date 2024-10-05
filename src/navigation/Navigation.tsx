@@ -10,6 +10,7 @@ const Navigation = () => {
       <Link to="/04-reducer-state">Reducer State</Link>
       <Link to="/05-component-life-cycle">Component Life Cycle</Link>
       <Link to="/06-refs-example">Refs Example</Link>
+      <Link to="/07-imperative">Imperative</Link>
     </nav>
   );
 };

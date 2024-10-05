@@ -5,6 +5,7 @@ import SimpleState from "../pages/03-SimpleState/SimpleState";
 import ReducerStateComponent from "../pages/04-ReducerState/ReducerState";
 import ComponentLifeCycle from "../pages/05-ComponentLifecycle/ComponentLifeCycle";
 import RefsExample from "../pages/06-RefsExample/RefExample";
+import Imperative from "../pages/07-Imperative/Imperative";
 
 const AppRouter = () => {
   return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
       <Route path="/04-reducer-state" element={<ReducerStateComponent />} />
       <Route path="/05-component-life-cycle" element={<ComponentLifeCycle />} />
       <Route path="/06-refs-example" element={<RefsExample />} />
+      <Route path="/07-imperative" element={<Imperative />} />
     </Routes>
   );
 };
