@@ -10,6 +10,7 @@ import { FunctionComponent } from "react";
 import ContextExample from "../pages/08-Context/ContextExample";
 import ComponentList from "../pages/09-ComponentList/ComponentList";
 import ListWithContext from "../pages/10-ListWithContext/ListWithContext";
+import OptimizationComponent from "../pages/11-Optimization/OptimizationComponent";
 
 type AppPageConfig = {
   path: string;
@@ -67,6 +68,11 @@ const appRoutes: AppPageConfig[] = [
     path: "/10-list-with-context",
     name: "List with Context",
     PageComponent: ListWithContext,
+  },
+  {
+    path: "/11-Optimization",
+    name: "Optimization Component",
+    PageComponent: OptimizationComponent,
   },
 ];
 

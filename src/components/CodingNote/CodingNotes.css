@@ -1,0 +1,19 @@
+.coding-notes {
+    background: lightskyblue;
+    border-color: darkblue;
+    max-width: 900px;
+    text-align: left;
+    margin: 16px auto;
+    padding:16px;
+}
+
+.coding-notes h3:first-child{
+    margin-top: 0;
+}
+
+
+.coding-notes h4{
+    color: #333;
+    /* font-weight:500; */
+    font-style: italic;
+}

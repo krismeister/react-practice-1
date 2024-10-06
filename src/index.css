@@ -14,10 +14,10 @@ code {
   background: lightgray;
   border: 1px solid black;
   padding: 15px 0;
-  width: 50%;
   margin: 5px auto 30px;
   text-align: left;
   white-space: pre;
+  padding: 16px;
 }
 
 dl {
