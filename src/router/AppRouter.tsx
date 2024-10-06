@@ -11,6 +11,7 @@ import ContextExample from "../pages/08-Context/ContextExample";
 import ComponentList from "../pages/09-ComponentList/ComponentList";
 import ListWithContext from "../pages/10-ListWithContext/ListWithContext";
 import OptimizationComponent from "../pages/11-Optimization/OptimizationComponent";
+import CustomReactHooks from "../pages/12-CustomReactHooks/CustomReactHooks";
 
 type AppPageConfig = {
   path: string;
@@ -73,6 +74,11 @@ const appRoutes: AppPageConfig[] = [
     path: "/11-Optimization",
     name: "Optimization Component",
     PageComponent: OptimizationComponent,
+  },
+  {
+    path: "/12-Optimization",
+    name: "Custom React Hooks",
+    PageComponent: CustomReactHooks,
   },
 ];
 
