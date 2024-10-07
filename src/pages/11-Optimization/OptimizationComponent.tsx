@@ -1,4 +1,4 @@
-import { useMemo, useState, lazy, Suspense } from "react";
+import { lazy, Suspense, useMemo, useState } from "react";
 import CodingNotes from "../../components/CodingNote/CodingNote";
 const LongWaitButton = lazy(() => import("./LongWaitButton"));
 

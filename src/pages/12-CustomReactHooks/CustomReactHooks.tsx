@@ -1,39 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import CodingNotes from "../../components/CodingNote/CodingNote";
 
-type ListItemShape = { value: string; timestamp: number };
-const TodoExample = () => {
-  const [list, setList] = useState<ListItemShape[]>([]);
-
-  //   useEffect(() => {
-  //     if (list.length == 5) {
-  //       return null;
-  //     }
-
-  //     const url = "someservice?";
-  //     const reqeust = async () => {
-  //       const response = await fetch(url, {
-  //         method: "POST",
-  //         body: JSON.stringify(list),
-  //       });
-  //       return await response.json();
-  //     };
-
-  //     const value = reqeust<ListItemShape[]>();
-  //     setList(value);
-  //   }, [list]);
-
-  return (
-    <>
-      <ul>
-        {list.map((item) => {
-          return <li key={item.timestamp}>{item.value}</li>;
-        })}
-      </ul>
-    </>
-  );
-};
-
 const Example = () => {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
@@ -81,6 +48,36 @@ function usePrevious(value: string | number) {
 
   return prevRef.current;
 }
+        `}</code>
+      </CodingNotes>
+      <CodingNotes
+        title="useLocalStorage"
+        summary='Use as expected in a component: const [theme, setTheme] = useLocalStorage("theme", "dark") '
+      >
+        <code>{`
+const useLocalStorage = (key, defaultValue) => {
+  const [value, setValue] = useState(() => {
+    let currentValue;
+
+    try {
+      currentValue = JSON.parse(
+        localStorage.getItem(key) || String(defaultValue)
+      );
+    } catch (error) {
+      currentValue = defaultValue;
+    }
+
+    return currentValue;
+  });
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [value, key]);
+
+  return [value, setValue];
+};
+
+export default useLocalStorage;
         `}</code>
       </CodingNotes>
     </>

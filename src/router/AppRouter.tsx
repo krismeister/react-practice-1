@@ -12,6 +12,7 @@ import ComponentList from "../pages/09-ComponentList/ComponentList";
 import ListWithContext from "../pages/10-ListWithContext/ListWithContext";
 import OptimizationComponent from "../pages/11-Optimization/OptimizationComponent";
 import CustomReactHooks from "../pages/12-CustomReactHooks/CustomReactHooks";
+import FetchHook from "../pages/13-FetchHook/FetchHook";
 
 type AppPageConfig = {
   path: string;
@@ -79,6 +80,11 @@ const appRoutes: AppPageConfig[] = [
     path: "/12-Optimization",
     name: "Custom React Hooks",
     PageComponent: CustomReactHooks,
+  },
+  {
+    path: "/13-fetch-hook",
+    name: "Custom Fetch Hook",
+    PageComponent: FetchHook,
   },
 ];
 

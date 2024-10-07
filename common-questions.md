@@ -47,6 +47,18 @@ You want to update the cart price, and there are many places that cart price cou
   - The item is added back onto the event stack and each event loop, it is checked if that data is ready. If it is, then the value is assigned inside of the original closure.
 
 
+## Senior JS items:
+1. WeakMap and WeakSet - can be garbage collected
+1. WeakMap/WeakSet: Weakly referenced objects for memory-efficient data structures.
+1. BigInt: For handling large arbitrary-precision integers.
+1. Proxy: For intercepting and customizing object behavior.
+1. Reflect: For utility functions that perform object-like operations.
+1. Intl Objects: For internationalization and localization of dates, numbers, and currencies.
+1. TypedArray and ArrayBuffer: For handling raw binary data.
+1. Promises (allSettled(), any()): Finer control of handling multiple asynchronous operations.
+1. URL Object: For URL parsing, manipulation, and construction.
+
+
 Timed Practices:
 1. TODO List
 
@@ -58,3 +70,32 @@ Timed Practices:
 1. [Mastering the Interview (medium)](https://medium.com/@phamtuanchip/mastering-the-interview-20-reactjs-interview-questions-for-senior-frontend-developers-75b1a3730193)
 1. [Senior React Interview Questions] (https://www.ideamotive.co/react/interview#senior)
 1. https://developer.chrome.com/blog/inside-browser-part1
+
+
+## phases of react rendering:
+- JSX interpolation to createElemnet
+- has a graph of the whole app tree
+- Virtual dom- a snapshop of the current graph
+- reconsilation - the process of creating a change set and pushing it to the DOM or native framework.
+
+## Companion Libraries:
+
+- Redux - helps manage state
+    - Store useSelect -> UI -> dispatch(action) -> reducer uses action, returns new state -> store updates.
+- Recoill - centralized subscription based state.
+- Datafetching:
+ - React Query: Hooks for fetching data
+ - Relay - graphql  client focused on scalapity
+ - Apollo - Graphql similar to Relay
+- Server Side Render: SSR
+ - Render
+ - Next.js
+- Static Site Generation: SSG
+ - Gatsby: populary for SSG
+- React Router
+- Bundlers:
+ - Webpack, Rollup, Browserify
+- Create-React-App
+- Vite
+ - framework agnostic alternative to create react app
+ - uses rollup under the hood

@@ -1,10 +1,4 @@
-import {
-  useState,
-  Context,
-  useContext,
-  FunctionComponent,
-  Fragment,
-} from "react";
+import { Fragment, FunctionComponent, useContext, useState } from "react";
 import { ListContext, ListContextProvider, ListType } from "./ListContext";
 
 const ListItem: FunctionComponent<{ item: ListType }> = ({ item }) => {
