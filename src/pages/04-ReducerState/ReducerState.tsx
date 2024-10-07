@@ -31,7 +31,9 @@ const reducer = (state: State, action: Action) => {
 };
 
 const Example: FunctionComponent = () => {
-  const [reducerState, dispatch] = useReducer(reducer, { values: ["first!"] });
+  const [reducerState, dispatch] = useReducer(reducer, {
+    values: ["first!", "2"],
+  });
   const [message, setMessage] = useState("I am the message");
 
   const handleAddClick = () => {

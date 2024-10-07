@@ -2,6 +2,8 @@
 nav {
     display: flex;
     background: orange;
+    flex-wrap: wrap;
+    
 }
 
 a {
